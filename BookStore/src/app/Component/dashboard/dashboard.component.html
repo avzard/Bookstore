@@ -1,0 +1,40 @@
+<mat-toolbar class="navbar">
+    <div class="head marginmain">
+        <div><img src="../../../assets/book.svg" id="nav" (click)="home()" class="imgmargin"><span
+                style="margin-left:10px;" class="books" (click)="home()">Book Store</span>
+        </div>
+
+
+        <div class="searchbody"><img src="../../../assets/search.png" id="searchimg"
+                style="height:30px;width:30px;margin-top:3px;" /><input type="search" class="searchboxx"
+                (keyup)="searchTitle($event)" placeholder="Search..." /></div>
+
+
+        <div class="icons">
+
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+                <img src="../../../assets/navuser.svg" alt="menu icon" width="25px" (click)="myprofile()">
+
+            </button>
+
+
+
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+                <img src="../../../assets/navcart.svg" alt="menu icon" width="25px" (click)="getallcart()">
+
+
+
+
+            </button>
+
+        </div>
+    </div>
+
+</mat-toolbar>
+
+<mat-card-content class="content">
+    <div style="height: 88vh;">
+        <router-outlet></router-outlet>
+    </div>
+
+</mat-card-content>

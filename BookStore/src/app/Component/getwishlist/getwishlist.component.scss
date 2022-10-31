@@ -1,0 +1,108 @@
+.maincard{
+    display: flex;
+}
+
+#bookimage{
+    height: 100px;
+    width: 80px;
+}
+.card{
+    width: 55%;
+    margin: auto;
+    margin-top: 5px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E4E4E4;
+}
+
+.leftcard{
+    margin-left: 30px;
+    padding:5px;
+}
+
+.card-title{
+    font-size: 16px; 
+    padding:10px;
+}
+
+.author{
+    font-size: 14px;
+    color:gray;
+    margin-left: 10px;
+}
+.discountedprice{
+    margin-left:10px;
+    text-decoration: line-through;
+    color:rgb(53, 50, 50);
+}
+
+
+
+.remvebtn{
+    margin-top: 10px;
+    margin-left: 320px;
+    cursor: pointer;
+
+}
+.toppanel{
+    width: 55%;
+    margin: auto;
+    margin-top: 6px;
+    height: 10px;
+    background-color: #F5F5F5;
+    border: 1px solid #E4E4E4;
+    margin-top:20px;
+   
+}
+.card-wishlist{
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.basetext{
+    font-size: 16px;
+    margin-left: 290px;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width:600px)  {
+    .basetext{
+        margin-left: 20px;
+    }
+    .toppanel{
+        width:80%;
+    }
+    .card{
+        width:80%;
+    }
+    .leftcard{
+        margin-left:5px;
+    }
+    .rightcard{
+            margin-left: 30px;
+    }
+    .remvebtn{
+        margin-left:40px;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:1250px)
+{  .basetext{
+    margin-left: 20px;
+}
+.toppanel{
+    width:80%;
+}
+.card{
+    width:80%;
+}
+.leftcard{
+    margin-left:5px;
+}
+.rightcard{
+        margin-left: 30px;
+}
+.remvebtn{
+    margin-left:100px;
+}
+}

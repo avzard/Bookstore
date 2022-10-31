@@ -1,0 +1,122 @@
+.basetext{
+    font-size: 16px;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.add-title{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 150px; 
+    top:30%;
+}
+.profiletext{
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 150px;
+    color: #333232;
+}
+
+.ptext{
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    border: 1px solid #E2E2E2;
+    border-radius: 2px;
+    opacity: 1;
+    padding:10px;
+    margin-left: 150px;
+    width:40%;
+    margin-top: 2px;
+}
+
+.mainadd{
+    display: flex;
+    margin-top: 10px;
+}
+
+.leftadd{
+    margin-left: 150px;
+    height: 60px;
+}
+
+ .rightadd{
+    height:60px;
+    margin-left: 50px;
+  }
+
+.ctext{
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    width:115%;
+    height: 35px;
+    border: 1px solid #E2E2E2;
+}
+
+.addarea{
+    padding:10px;
+    height: 35px;
+    width:45%;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+}
+
+.profiletextarea{
+    margin-top: 10px;
+    margin-left: 150px;
+}
+
+.addwork{
+    margin-left: 150px;
+
+}
+.protext{
+    font-size: 16px;
+    margin-top: 20px;
+    color: #333232;
+}
+
+.radio{
+margin-left: 150px;
+font-size: 16px;
+color: #333232;
+margin-top: 10px;
+}
+
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #f9faf9;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid rgb(75, 74, 74);
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #A52A2A;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.btn{
+    background-color: #A52A2A;
+    color:#F5F5F5;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 150px;
+    border: none;
+    height: 38px;
+    width: 550px;
+}

@@ -1,0 +1,126 @@
+.head{
+    background-color: brown;
+    padding:12px;
+    color: white;
+    width: 100%;
+    top:-60%;
+}
+.navbar{
+    position: fixed;
+    z-index: 1;
+}
+
+#nav{
+margin-top:8px;
+}
+
+.marginmain{
+    display: flex;
+    flex-direction: row; 
+}
+.searchboxx{
+    position: relative;
+    width: 90%;
+    border:0px;
+    margin-left: 10px;
+    top:-12px;
+    padding: 6px;
+    
+}
+.searchboxx::after{
+    border: 0px;
+}
+
+
+.searchbody{
+    background-color: white;
+    margin-left: 46px;
+    width:40%;
+    height: 32px;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+.icons
+{
+    display: flex;
+    margin-left: 70px;
+}
+
+.example-icon{
+    background-color: brown;
+    border:none;
+    color:white;
+    margin-left: 20px;
+    cursor: pointer;
+   
+}
+
+.content{
+ position: relative;
+    top:10%;
+}
+.mat-toolbar-row, .mat-toolbar-single-row
+{
+    top:-2px;
+    
+}
+.imgmargin{
+    margin-left: 150px;
+}
+
+.books{
+    font-size: 1rem;
+    margin-top:-10px;
+}
+
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+@media screen and (max-width:600px) {
+    .searchboxx
+    {
+    width:60%;
+    }
+    .searchbody{
+        width:500%;
+        margin-top: 5px;
+    }
+    .imgmargin{
+        margin-left: 10px;
+    }
+    .example-icon{
+        margin-left: 0px;
+    }
+    .icons
+    {
+        margin-left:10px
+    }
+}
+@media screen and (min-width :600px) and (max-width :1200px) {
+    .searchboxx
+    {
+        width: 40%;
+    }
+    img#bookimg{
+        width: 70px;
+    }
+    .searchbody{
+        width:50%;
+        margin-top: 5px;
+    }   
+    .imgmargin{
+        margin-left: 60px;
+    }
+    .icons
+    {
+        margin-left:20px
+    }
+}

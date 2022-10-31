@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="basetext"><span style="color:#aaa6a6">Home/</span>Wishlist</div>
+    <mat-card class="toppanel">
+        <mat-card-title class="card-wishlist">My WishList ({{wishlistArray.length}})</mat-card-title>
+    </mat-card>
+
+
+    <div *ngFor="let book of wishlistArray">
+
+
+        <mat-card class="card">
+
+            <div class="maincard">
+                <div class="leftcard">
+                    <img src={{book.bookImage}} id="bookimage">
+                </div>
+
+                <div class="rightcard">
+                    <mat-card-title class="card-title">{{book.bookName}}</mat-card-title>
+                    <div class="author">By {{book.author}}</div>
+                    <div class="card-title"><span></span> <strong>Rs. {{book.discountedPrice}}
+                            /-</strong> <span class="author discountedprice"> Rs.
+                            {{book.price}}</span></div>
+
+                </div>
+                <div class="remvebtn" (click)="removerwishlist(book)"> <img src="../../../assets/deleteforever.svg"
+                        alt="menu icon" width="18px"></div>
+
+            </div>
+
+        </mat-card>

@@ -1,0 +1,260 @@
+.maincard{
+  display: flex;
+  margin-top:5px;
+}
+
+#bookimage{
+  height: 100px;
+  width: 80px;
+}
+.card{
+  width: 50%;
+  margin: auto;
+  margin-top: 15px;
+  border: 1px solid #c5c5c5;
+  border-radius: 1px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+
+.leftcard{
+  margin-left: 30px;
+  padding:5px;
+}
+
+.card-title{
+  font-size: 16px; 
+  margin-top: 5px;
+  margin-left: 30px;
+  font-family: sans-serif;
+  font-weight:bold;
+}
+
+.author{
+  font-size: 14px;
+  color:gray;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+.discountedprice{
+  margin-left:10px;
+  text-decoration: line-through;
+  color:rgb(53, 50, 50);
+}
+.qntbtn{
+  height: 25px;
+  width: 25px;
+  border-radius:50%;
+  border:1px solid grey;
+  margin-left:30px;
+}
+.qntbtnn{
+  height: 25px;
+  width: 25px;
+  border-radius:50%;
+  border:1px solid grey;
+  margin-left:10px;
+}
+.qntmainbtn{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.boxqnt{
+  height: 24px;
+  width: 40px;
+  margin-left: 6px;
+  text-align: center;
+  border:1px solid grey;
+}
+.removebtn{
+  border: none;
+  margin-left: 20px;
+  background-color: white;
+  font-size: 16px;
+  font-family:sans-serif;
+  cursor: pointer;
+}
+.basetext{
+  font-size: 16px;
+  margin-left: 320px;
+  margin-top: 15px;
+}
+
+.leftmycart{
+  margin-left: 10px;
+}
+
+.rightmycart{
+  width: 260px;
+  height: 35px;
+  border: 1px solid #DCDCDC;
+  margin-top: 1px;
+  margin-left: 260px;
+}
+
+.mycart{
+  display: flex;
+}
+
+.add-title{
+  font-size: 18px;
+  color: #333232;
+  margin-top: 10px;
+  margin-left: 10px; 
+}
+
+.mainadd{
+  display: flex;
+}
+
+.leftadd{
+margin-left:20px;
+margin-top: 10px;
+}
+
+.rightadd{
+margin-top: 10px;
+margin-left: 90px;
+}
+
+
+.addname{
+  font-size: 15px;
+  color: #444343;  
+}
+
+.addresstext{
+  padding:10px;
+  width:120%;
+  border: 1px solid #DCDCDC;
+}
+
+.addwork{
+  font-size: 21px;
+  color: black;
+}
+
+.addresspart{
+  margin-left: 22px;
+}
+.addarea{
+  padding: 10px;
+  height: 38px;
+  width:80%;
+  border: 1px solid #DCDCDC;
+}
+
+.submit{
+
+  color:white;
+  font-size: 18px;
+  border:none;
+  margin-left: 490px;
+  width: 160px;
+  height: 35px;
+background: #3371B5 0% 0% no-repeat padding-box;
+border-radius: 3px;
+opacity: 1;
+}
+
+
+.radio{
+  margin-left: 50px;
+  font-size: 16px;
+  color: #333232;
+  margin-top: 10px;
+  }
+  
+  
+  input[type='radio']:after {
+      width: 15px;
+      height: 15px;
+      border-radius: 15px;
+      top: -2px;
+      left: -1px;
+      position: relative;
+      background-color: #f9faf9;
+      content: '';
+      display: inline-block;
+      visibility: visible;
+      border: 2px solid rgb(75, 74, 74);
+  }
+  
+  input[type='radio']:checked:after {
+      width: 15px;
+      height: 15px;
+      border-radius: 15px;
+      top: -2px;
+      left: -1px;
+      position: relative;
+      background-color: #A52A2A;
+      content: '';
+      display: inline-block;
+      visibility: visible;
+      border: 2px solid white;
+  }
+
+  .profiletextarea{
+      margin-top: 20px;
+      margin-left: 150px;
+      font-size: 16px;
+  }
+  
+
+
+  @media screen and (max-width:600px){
+      .basetext{
+          margin-left: 10px;
+      }
+      .card{
+          margin-left: 20px;
+          width:80%;
+      }
+      .submit{
+          margin-left: 20px;
+      }
+      .addresstext{
+          width:90%;
+      }
+
+      .leftadd
+      {
+          margin-left:20px;
+      }
+      .rightadd{
+          margin-left: 20px;
+      }
+      .radio{
+          margin-left: 40px;
+      }
+      .addarea
+      {
+          width:95%;
+      }
+  }
+
+  @media screen and (min-width:600px) and (max-width:1200px) {
+      .basetext{
+          margin-left: 60px;
+      }
+      .card{
+          margin:auto;
+          width:70%;
+      }
+      .submit{
+          margin-left:20px;
+      }
+    .radio{
+          margin-left: 50px;
+      }
+      .addresstext{
+          width:100%;
+      }
+  }
+
+      @media screen and (min-width:600px) and (max-width:800px) {
+          .adddresstext{
+              width:90%;
+          }
+  }

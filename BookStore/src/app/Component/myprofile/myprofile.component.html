@@ -1,0 +1,72 @@
+<div class="container">
+
+    <div class="basetext"><span style="color:#aaa6a6">Home/</span>Myprofile</div>
+
+    <div class="personaldetails">
+    <div class="add-title">Personal Details</div>
+
+
+    <div class="profiletext">Full Name</div>
+    <input type="text" placeholder="Enter FullName" class="ptext"/>
+
+    <div class="profiletext">Email</div>
+    <input type="text" placeholder="Enter Email id" class="ptext"/>
+
+    <div class="profiletext">Password</div>
+    <input type="password" placeholder="Enter Password" class="ptext"/>
+
+    <div class="profiletext">Mobile Number</div>
+    <input type="number" placeholder="Enter Mobile Number" class="ptext"/>
+        </div><br><br>
+
+
+
+
+        <div class="personalAddress">
+            <mat-card-title class="addwork">Work</mat-card-title>
+            <form [formGroup]="myprofileForm" (ngSubmit)="onSubmit()">  
+                <div class="addresspart">
+                
+                    <mat-card-title class="profiletext">Address</mat-card-title><br>
+                    <div class="profiletextarea">
+                    <textarea placeholder="Enter Address" formControlName="Address" class="addarea"></textarea>
+                    </div>
+                
+                
+                    <div class="mainadd">
+                
+                        <div class="leftadd">
+                            <mat-card-title class="protext">City Town</mat-card-title>
+                
+                            <input type="text"placeholder="Enter City" formControlName="City" class="ctext" required/>
+                
+                        </div>
+                
+                        <div class="rightadd">
+                            <mat-card-title class="protext">State</mat-card-title >
+                            <input type="text"placeholder="Enter State" formControlName="State" class="ctext" required/>
+                        </div>
+                
+                    </div><br>
+
+                    <mat-card-title class="profiletext">Type</mat-card-title>
+                        
+                    <div class="radio" >
+                        <label for="HOME">Home</label>
+                        <input type="radio" formControlName="type" id="home" name="type" value=1>
+                         <label for="OFFICE"  style="margin-left: 100px;">Office</label>
+                         <input type="radio" formControlName="type" checked id="office" name="type" value=2>
+                        <label for="OTHER" style="margin-left: 100px;">Other</label>
+                        <input type="radio" formControlName="type" id="other" name="type" value=3>
+                        
+                        </div>
+
+                    </div>
+                    <button type="submit" class="btn">Submit</button>
+            </form>
+        </div><br><br>
+
+
+
+
+</div><br><br>

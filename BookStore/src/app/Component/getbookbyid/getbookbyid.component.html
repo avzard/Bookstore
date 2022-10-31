@@ -1,0 +1,94 @@
+<div class="container">
+    <div class="basetext"><span style="color:#aaa6a6">Home/</span>Books</div>
+    <div class="main">
+
+        <div class="leftbook">
+
+            <mat-card>
+
+                <img src={{getbook.bookImage}} id="bookimg" />
+            </mat-card>
+
+            <div class="imgbtn">
+                <button (click)="AddToCart(getbook)" class="leftbtn">ADD TO CART</button>
+                <button (click)="WishList(getbook)" class="rightbtn">WISHLIST</button>
+            </div>
+
+
+        </div>
+
+        <div class="rightbook">
+            <mat-card-title class="card-title">{{getbook.bookName}}</mat-card-title>
+            <mat-card-title class="author">By {{getbook.author}}</mat-card-title>
+            <div class="ratingflex">
+                <div class="badge">{{getbook.rating}} <img src="../../../assets/starr.png" class="star"> </div>
+                <div class="rating">({{getbook.ratingCount}})</div>
+            </div>
+            <div class="price"><span></span> <strong>Rs. {{getbook.price}} /-</strong> <span class="discountedprice">
+                    Rs. {{getbook.discountedPrice}}</span></div>
+            <hr class="hrr">
+
+            <mat-card-title class="card-content">{{getbook.description}}</mat-card-title>
+
+            <hr class="hrr">
+
+            <mat-card style="margin-top: 30px;">
+                <span style="font-size: 20px;">Customer Feedback</span>
+                <mat-card class="ratingcard">
+                    <span>Overall rating</span>
+                    <div>
+                        <div class="rate">
+
+                            <input type="radio" id="star5" name="rate" [(ngModel)]="rating" value="5" />
+                            <label for="star5" title="Extremely Good"></label>
+                            <input type="radio" id="star4" name="rate" [(ngModel)]="rating" value="4" />
+                            <label for="star4" title="Very Good"></label>
+                            <input type="radio" id="star3" name="rate" [(ngModel)]="rating" value="3" />
+                            <label for="star3" title="Good"></label>
+                            <input type="radio" id="star2" name="rate" [(ngModel)]="rating" value="2" />
+                            <label for="star2" title="Not Bad"></label>
+                            <input type="radio" id="star1" name="rate" [(ngModel)]="rating" value="1" />
+                            <label for="star1" title="Bad"></label>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <input style="width:80%;height:40px;border-radius: 5px;" placeholder="Enter you view"
+                            [(ngModel)]="comment">
+                    </div>
+
+                    <div fxLayoutAlign="end center">
+                        <button (click)="addFeedback(getbook)" class="submit">Submit</button>
+                    </div>
+                </mat-card>
+            </mat-card>
+            <mat-card style="margin-top: 40px; border: none;" fxLayout="column">
+                <div fxLayoutGap="20px" *ngFor="let feedback of booksArr" style="margin-left: 20px;">
+                    <div>
+                        <span class="user-feedback"> {{(feedback.fullName)}}</span>
+                    </div>
+
+
+                    <div style="font-size: 28px;color: orange;padding-top: 10px;">
+
+                        <div class="rate">
+                            <input type="radio" value=readonly value="{{feedback.totalRating}" value="5" />
+                            <label for="star5" title="Extremely Good"></label>
+                            <input type="radio" value=readonly value="{{feedback.totalRating}}" value="4" />
+                            <label for="star4" title="Very Good"></label>
+                            <input type="radio" value=readonly value="{{feedback.totalRating}}" value="3" />
+                            <label for="star3" title="Good"></label>
+                            <input type="radio" value=readonly value="{{feedback.totalRating}}" value="2" />
+                            <label for="star2" title="Not Bad"></label>
+                            <input type="radio" value=readonly value="{{feedback.totalRating}}" value="1" />
+                            <label for="star1" title="Bad"></label>
+                        </div>
+
+                    </div>
+                    <div style="padding-top: 10px">
+                        <span class="user-comment"> {{feedback.comment}}</span>
+                    </div>
+                </div>
+            </mat-card>
+        </div>
+    </div>
+</div>

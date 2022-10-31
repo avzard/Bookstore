@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="basetext"><span style="color:#aaa6a6">Home/</span>Cart</div>
+
+
+    <div *ngFor="let book of allcart">
+        <mat-card class="card">
+            
+
+            <div class="maincard">
+                <div class="leftcard">
+                    <img src={{book.bookImage}} id="bookimage">
+                </div>
+
+                <div class="rightcard">
+                    <div class="card-title">{{book.bookName}}</div>
+                    <div class="author">By {{book.author}}</div>
+                    <div class="" style="margin-top: 7px;"><span></span> <strong class="card-title">Rs.
+                            {{book.discountedPrice * book.bookQuantity}} /-</strong> <span class="author discountedprice">
+                            Rs. {{book.price * book.bookQuantity}}</span></div>
+
+                    <div class="qntmainbtn">
+                        <div><button class="qntbtn" (click)="lessQnt(book)">-</button></div>
+                        <div class="boxqnt">{{book.bookQuantity}}</div>
+                        <div><button class="qntbtnn" (click)="addQnt(book)">+</button></div>
+                        <div><button class="removebtn" (click)="Remove(book)">Remove</button></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </mat-card>
+    </div>
+<div>
+    <app-adress-component></app-adress-component>
+</div>
+
+
+
+    

@@ -1,0 +1,42 @@
+<div class="baseFlex">
+  <div class="basetext">Books<span style="color:rgb(172, 169, 169);margin-left:3px;">({{BooksList.length}} items)</span></div>
+
+  <div class="rightflex">
+    <div>
+      <mat-form-field appearance="outline">
+        <mat-label>Sort by relevance</mat-label>
+        <mat-select class="matselect">
+          <mat-option clicked (click)="newestarrivals()" value="third">Newest Arrivals</mat-option>
+          <mat-option (click)="lowtohigh()" value="one">Price:Low to High</mat-option>
+          <mat-option (click)=" hightolow()" value="two">Price:High to Low</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+
+  <div class="note" *ngFor="let book of BooksList | pipefilterdata  : searchWord  ">
+    <div (click)="bookid(book)">
+
+      <mat-card class="example-card">
+        <div class="card-title "> <img src={{book.bookImage}} class="productimage" /></div>
+
+        <div class="abc">
+          <mat-card-title class="card-title product">{{book.bookName}}</mat-card-title>
+          <mat-card-title class="author">By {{book.author}}</mat-card-title>
+
+          <div class="ratingbadge">
+            <div class="badge">{{book.rating}} <img src="../../../assets/starr.png" class=star> </div>
+            <div style="color:black;margin-left: 4px;">({{book.ratingCount}}) </div>
+          </div>
+
+          <div class="price"> <strong>Rs. {{book.discountedPrice}} /-</strong> <span class="discountedprice"> Rs.
+              {{book.price}}</span></div>
+        </div><br>
+      </mat-card>
+    </div>
+  </div>
+</div>
